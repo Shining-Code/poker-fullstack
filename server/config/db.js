@@ -1,5 +1,5 @@
-const mongoose = require('mongoose');
-const config = require('../config');
+const mongoose = require("mongoose");
+const config = require("../config");
 
 const connectDB = async () => {
   try {
@@ -9,7 +9,7 @@ const connectDB = async () => {
       useFindAndModify: false,
       useUnifiedTopology: true,
     });
-    console.log('Successfully connected to MongoDB!');
+    console.log("Successfully connected to MongoDB!");
 
     return db;
   } catch (err) {
