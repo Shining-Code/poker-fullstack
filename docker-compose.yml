@@ -1,7 +1,7 @@
 version: "3.8"
 services:
   app:
-    image: poker-be
+    image: quangvd30/poker-be:v1.0
     ports:
       - "5100:5100" # Expose the port your app runs on
     environment:
