@@ -33,6 +33,7 @@ const Loader = () => (
         fill="#6297B5"
       />
     </svg>
+    
     <svg
       width="264"
       height="25"

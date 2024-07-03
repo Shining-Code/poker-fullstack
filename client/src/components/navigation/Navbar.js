@@ -15,7 +15,8 @@ import Markdown from 'react-remarkable';
 
 const StyledNav = styled.nav`
   padding: 1rem 0;
-  position: absolute;
+  position: sticky;
+  top: 0;
   z-index: 99;
   width: 100%;
   background-color: ${(props) => props.theme.colors.lightestBg};

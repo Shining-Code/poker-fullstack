@@ -5,6 +5,8 @@ import RegistrationPage from '../../pages/RegistrationPage';
 import LoginPage from '../../pages/LoginPage';
 import Dashboard from '../../pages/Dashboard';
 import Play from '../../pages/Play';
+import BetLists from '../../pages/Bet';
+
 import ProtectedRoute from './ProtectedRoute';
 import StaticPage from '../../pages/StaticPage';
 import NotFoundPage from '../../pages/NotFoundPage';
@@ -19,6 +21,7 @@ const Routes = () => {
       <Route path="/register" component={RegistrationPage} />
       <Route path="/login" component={LoginPage} />
       <ProtectedRoute path="/dashboard" component={Dashboard} />
+      {console.log(staticPages)}
       {staticPages &&
         staticPages.map((page) => (
           <Route
@@ -30,6 +33,8 @@ const Routes = () => {
           />
         ))}
       <ProtectedRoute path="/play" component={Play} />
+      <ProtectedRoute path="/bet" component={BetLists} />
+
       <Route component={NotFoundPage} />
     </Switch>
   );
