@@ -1,0 +1,18 @@
+version: "3.8"
+services:
+  app:
+    image: poker-be
+    ports:
+      - "5100:5100" # Expose the port your app runs on
+    environment:
+      NODE_ENV: production
+      PORT: 5100
+      JWT_SECRET: c9d1a3b8f5e6d7a4b9e7f8d3c4e5a6f7b1d2c3e4a7b8c9d0e1f2a3b4c5d6e7f8
+      MONGO_URI: mongodb://pokerAdmin:verystrongpasswordhahaha@52.221.179.225:27017/poker
+      SMTP_HOST: vietanh123456123@gmail.com
+      SMTP_PORT: 587
+      SMTP_USER: vietanh123456123@gmail.com
+      SMTP_PW: mcdqcfvjpupyuxtm
+      FROM_NAME: "Vintage Poker Info"
+      FROM_EMAIL: "no-reply@vintagepoker.net"
+    command: npm run start # Adjust this command to how you start your app
