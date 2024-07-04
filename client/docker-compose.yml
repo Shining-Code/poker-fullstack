@@ -2,11 +2,6 @@ version: "3.8"
 
 services:
   poker-fe:
-    image: quangvd30/poker-fe:v1.1
+    image: poker-fe
     ports:
       - "5101:80"
-    environment:
-      REACT_APP_CONTENTFUL_SPACE_ID: 4tlsutsg5se1
-      REACT_APP_CONTENTFUL_ACCESS_TOKEN: _BZqCnlzI0RuHvLPcOIfNxjUfS082jSJ9WmevnXSLdk
-      REACT_APP_GOOGLE_ANALYTICS_TRACKING_ID: YOUR_GOOGLE_ANALYTICS_TRACKING_ID
-      REACT_APP_SERVER_URI: https://pokerapi.shiningcode.dev
