@@ -43,7 +43,7 @@ const LogoWithText = () => (
       fontWeight="bold"
       fontFamily="Arial, sans-serif"
     >
-      SHININGCODE POKER
+      SHINING POKER
     </text>
     <defs>
       <clipPath id="clip0">

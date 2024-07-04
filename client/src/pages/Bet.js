@@ -2,7 +2,6 @@ import React from 'react';
 import Container from '../components/layout/Container';
 import { RotateDevicePrompt } from '../components/game/RotateDevicePrompt';
 import { withRouter } from 'react-router-dom';
-import { PositionedUISlot } from '../components/game/PositionedUISlot';
 import { BetsWrapper } from '../components/bets/BetsWrapper';
 import BetsCard from '../components/bets/BestCard';
 

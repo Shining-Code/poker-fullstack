@@ -37,7 +37,7 @@ export const GameStateInfo = ({ currentTable }) => {
           style={{ minWidth: '150px' }}
         />
       )}
-
+    
       {currentTable.sidePots > 0 &&
         currentTable.sidePots.map((sidePot) => (
           <ChipsAmountPill

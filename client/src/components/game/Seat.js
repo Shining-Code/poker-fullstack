@@ -194,7 +194,7 @@ export const Seat = ({ currentTable, seatNumber, isPlayerSeated, sitDown }) => {
             origin="center right"
           >
             <Hand>
-              {seat.hand &&
+              {seat.hand && seat.hand[0]?.rank === "hidden" &&
                 seat.hand.map((card, index) => (
                   <PokerCard
                     key={index}

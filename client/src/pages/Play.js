@@ -59,8 +59,8 @@ const Play = ({ history }) => {
       (currentTable.callAmount > currentTable.minBet
         ? setBet(currentTable.callAmount)
         : currentTable.pot > 0
-        ? setBet(currentTable.minRaise)
-        : setBet(currentTable.minBet));
+          ? setBet(currentTable.minRaise)
+          : setBet(currentTable.minBet));
   }, [currentTable]);
 
   return (
@@ -196,7 +196,7 @@ const Play = ({ history }) => {
                   </>
                 )}
               </PositionedUISlot>
-              <PositionedUISlot bottom="8%" scale="0.60" origin="bottom center">
+              <PositionedUISlot top="-25%" scale="0.60" origin="bottom center">
                 {messages && messages.length > 0 && (
                   <>
                     <InfoPill>{messages[messages.length - 1]}</InfoPill>
@@ -207,7 +207,7 @@ const Play = ({ history }) => {
                       <InfoPill>
                         {
                           currentTable.winMessages[
-                            currentTable.winMessages.length - 1
+                          currentTable.winMessages.length - 1
                           ]
                         }
                       </InfoPill>
@@ -224,6 +224,35 @@ const Play = ({ history }) => {
                   <GameStateInfo currentTable={currentTable} />
                 )}
               </PositionedUISlot>
+
+              {
+                currentTable && [1, 2, 3, 4, 5, 6].map((data) => {
+                  var seat = currentTable.seats[data];
+
+                  if (seat && seat.hand && seat.hand.length > 0 && seat.hand[0]?.rank !== "hidden") {
+                    return (
+                      <PositionedUISlot
+                        bottom="-5%"
+                        scale="0.60"
+                        origin="center center"
+                        style={{ zIndex: '50' }}
+                      >
+                        {
+                          seat.hand.map((card, index) => (
+                            <PokerCard
+                              key={index}
+                              card={card}
+                              width="7vw"
+                              maxWidth="60px"
+                              minWidth="30px"
+                            />
+                          ))
+                        }
+                      </PositionedUISlot>
+                    )
+                  }
+                })
+              }
             </>
           )}
         </PokerTableWrapper>
@@ -244,7 +273,7 @@ const Play = ({ history }) => {
               call={call}
             />
           )}
-      </Container>
+      </Container >
     </>
   );
 };
