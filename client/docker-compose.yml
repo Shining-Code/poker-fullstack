@@ -2,6 +2,6 @@ version: "3.8"
 
 services:
   poker-fe:
-    image: poker-fe
+    image: quangvd30/poker-fe:v1.2
     ports:
       - "5101:80"
