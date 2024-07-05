@@ -10,8 +10,8 @@ const Button = styled.button`
   outline: none;
   border: 2px solid rgba(0, 0, 0, 0);
   border-radius: ${(props) => props.theme.other.stdBorderRadius};
-  background-color: ${(props) => props.theme.colors.goldenColor};
-  color: ${(props) => props.theme.colors.fontColorDark};
+  background-color: ${(props) => props.theme.colors.lightestBg};
+  color: ${(props) => props.theme.colors.fontColorLight};
   font-family: ${(props) => props.theme.fonts.fontFamilySansSerif};
   font-weight: 400;
   font-size: 1.3rem;
@@ -21,20 +21,20 @@ const Button = styled.button`
   transition: all 0.3s;
 
   &:visited {
-    background-color: ${(props) => props.theme.colors.goldenColorDarker};
-    color: ${(props) => props.theme.colors.fontColorDark};
+    background-color: ${(props) => props.theme.colors.lightestBg};
+    color: ${(props) => props.theme.colors.primaryCta};
   }
 
   &:hover,
   &:active {
-    background-color: ${(props) => props.theme.colors.goldenColorDarker};
-    color: ${(props) => props.theme.colors.fontColorDark};
+    background-color: ${(props) => props.theme.colors.lightestBg};
+    color: ${(props) => props.theme.colors.primaryCta};
   }
 
   &:focus {
     outline: none;
-    border: 2px solid ${(props) => props.theme.colors.primaryCtaDarker};
-    color: ${(props) => props.theme.colors.fontColorDark};
+    border: 2px solid ${(props) => props.theme.colors.lightestBg};
+    color: ${(props) => props.theme.colors.primaryCta};
   }
 
   &:disabled {
@@ -54,15 +54,16 @@ const Button = styled.button`
 
       &,
       &:visited {
-        background-color: ${(props) => props.theme.colors.primaryCta};
+        background-color: ${(props) => props.theme.colors.lightestBg};
+        border-color: ${(props) => props.theme.colors.primaryCta};
         color: ${(props) => props.theme.colors.fontColorLight};
       }
 
       &:hover,
       &:active {
-        background-color: ${(props) => props.theme.colors.primaryCtaDarker};
-        border-color: ${(props) => props.theme.colors.primaryCtaDarker};
-        color: ${(props) => props.theme.colors.fontColorLight};
+        background-color: ${(props) => props.theme.colors.primaryCta};
+        border-color: ${(props) => props.theme.colors.lightestBg};
+        color: ${(props) => props.theme.colors.lightestBg};
       }
 
       &:focus {
@@ -90,15 +91,16 @@ const Button = styled.button`
 
       &:hover,
       &:active {
-        border: 2px solid ${(props) => props.theme.colors.primaryCtaDarker};
-        background-color: transparent;
-        color: ${(props) => props.theme.colors.primaryCtaDarker};
+        border: 2px solid ${(props) => props.theme.colors.lightestBg};
+        background-color: ${(props) => props.theme.colors.lightestBg};
+        color: ${(props) => props.theme.colors.primaryCta};
       }
 
       &:focus {
         outline: none;
-        border: 2px solid ${(props) => props.theme.colors.primaryCtaDarker};
-        color: ${(props) => props.theme.colors.primaryCtaDarker};
+        border: 2px solid ${(props) => props.theme.colors.lightestBg};
+        background-color: ${(props) => props.theme.colors.lightestBg};
+        color: ${(props) => props.theme.colors.primaryCta};
       }
 
       &:disabled {

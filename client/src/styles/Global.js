@@ -52,7 +52,7 @@ const GlobalStyles = createGlobalStyle`
 
   body {
     background-color: ${(props) => props.theme.colors.lightestBg};
-    color: ${(props) => props.theme.colors.fontColorDark};
+    color: ${(props) => props.theme.colors.fontColorLight};
     font-family: ${(props) => props.theme.fonts.fontFamilySansSerif};
     line-height: ${(props) => props.theme.fonts.fontLineHeight};
     font-weight: 400;
@@ -143,6 +143,9 @@ const GlobalStyles = createGlobalStyle`
     width: 100%;
   }
 
+  .layout-wrapper{
+    /* background-image: url(); */
+  }
   @media screen and (max-width: 1024px){
     :root{
       font-size: ${(props) => props.theme.fonts.fontSizeRootMobile};

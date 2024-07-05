@@ -35,7 +35,7 @@ const LogoWithText = () => (
       />
     </g>
     <text
-      x="55%"
+      x="45%"
       y="30"
       textAnchor="middle"
       fill={theme.colors.primaryCta}

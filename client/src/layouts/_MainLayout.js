@@ -1,7 +1,7 @@
 import React, { useContext } from 'react';
 import Navbar from '../components/navigation/Navbar';
 import Footer from '../components/navigation/Footer';
-import WatermarkWrapper from '../components/decoration/WatermarkWrapper';
+// import WatermarkWrapper from '../components/decoration/WatermarkWrapper';
 import NavMenu from '../components/navigation/NavMenu';
 import CookieBanner from '../components/cookies/CookieBanner';
 import { withRouter } from 'react-router-dom';
@@ -24,7 +24,7 @@ const MainLayout = ({ children, location }) => {
   const [isCookieSet, setCookie] = useCookie('cookies-accepted', true);
 
   return (
-    <div id="layout-wrapper">
+    <div id="layout-wrapper" style={{backgroundImage: `url(${process.env.PUBLIC_URL}/t.jpg)`}}>
       {!location.pathname.includes('/play') && (
         <Navbar
           chipsAmount={chipsAmount}
@@ -46,7 +46,7 @@ const MainLayout = ({ children, location }) => {
         ></NavMenu>
       )}
       <main className="blur-target">{children}</main>
-      <WatermarkWrapper className="blur-target" />
+      {/* <WatermarkWrapper className="blur-target" /> */}
       {!location.pathname.includes('/play') && (
         <Footer
           className="blur-target"

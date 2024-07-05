@@ -2,22 +2,22 @@ const theme = {
   // Colors
   colors: {
     // Primary Brand Colors
-    primaryCta: 'hsl(202, 49%, 28%)',
+    primaryCta: 'hsl(0,0%,100%)',
     primaryCtaDarker: 'hsl(202, 49%, 18%)',
-    secondaryCta: 'hsl(202, 36%, 55%)',
+    secondaryCta: 'hsl(210,17%,98%)',
     secondaryCtaDarker: 'hsl(202, 36%, 45%)',
     secondaryCtaDarkest: 'hsl(202, 36%, 35%)',
     // Secondary Brand Colors
     darkBg: 'hsl(43, 40%, 60%)',
-    lightBg: 'hsl(43, 40%, 81%)',
-    lightestBg: 'hsl(43, 40%, 86%)',
+    lightBg: 'hsl(0,0%,100%)',
+    lightestBg: 'hsl(0,0%,0%)',
     // Font Colors
     fontColorLight: 'hsl(40, 100%, 99%)',
     fontColorDark: 'hsl(36, 71%, 3%)',
     fontColorDarkLighter: 'hsl(36, 71%, 13%)',
     // Other colors
-    playingCardBg: 'hsl(49, 63%, 92%)',
-    playingCardBgLighter: 'hsl(49, 63%, 94%)',
+    playingCardBg: 'hsl(0,0%,0%)',
+    playingCardBgLighter: 'hsl(0,0%,0%)',
     goldenColorDarker: 'hsl(43, 40%, 60%)',
     goldenColor: 'hsl(43, 40%, 65%)',
     dangerColorLighter: 'hsl(0, 100%, 56%)',

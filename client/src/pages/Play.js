@@ -238,19 +238,21 @@ const Play = ({ history }) => {
                         style={{ zIndex: '50' }}
                       >
                         {
-                          seat.hand.map((card, index) => (
-                            <PokerCard
+                          seat.hand.map((card, index) => 
+                             <PokerCard
                               key={index}
                               card={card}
                               width="7vw"
                               maxWidth="60px"
                               minWidth="30px"
                             />
-                          ))
+                          )
                         }
                       </PositionedUISlot>
                     )
                   }
+
+                  return null
                 })
               }
             </>

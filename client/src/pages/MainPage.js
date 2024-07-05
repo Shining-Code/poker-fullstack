@@ -130,7 +130,7 @@ const MainPage = ({ history }) => {
     >
       <WelcomeHeading as="h2" textCentered>
         {getLocalizedString('main_page-salutation')}{' '}
-        <ColoredText>{userName}!</ColoredText>
+        <ColoredText secondary>{userName}!</ColoredText>
       </WelcomeHeading>
       <MainMenuWrapper>
         <MainMenuCard onClick={() => history.push('/bet')}>
