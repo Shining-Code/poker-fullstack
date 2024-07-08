@@ -44,7 +44,7 @@ const ContentWrapper = styled.div`
 
 const Content = styled.div`
   padding: 1em;
-  color: ${(props) => props.theme.colors.fontColorDark};
+  color: ${(props) => props.theme.colors.fontColorLight};
   font-size: 0.85rem;
   text-align: left;
   width: 70%;

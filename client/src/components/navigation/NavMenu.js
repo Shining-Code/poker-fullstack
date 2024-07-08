@@ -57,7 +57,7 @@ const MenuItem = styled(Link)`
   width: 100%;
   text-align: right;
   font-family: ${(props) => props.theme.fonts.fontFamilySansSerif};
-  color: ${(props) => props.theme.colors.primaryCta} !important;
+  color: ${(props) => props.theme.colors.fontColorDark} !important;
   border-bottom: 1px solid ${(props) => props.theme.colors.lightestBg};
   background-color: ${(props) => props.theme.colors.lightBg} !important;
   font-size: ${(props) => props.theme.fonts.fontSizeParagraph};
@@ -65,6 +65,7 @@ const MenuItem = styled(Link)`
 
   &:hover {
     background-color: ${(props) => props.theme.colors.goldenColor} !important;
+    color: ${(props) => props.theme.colors.fontColorLight};
   }
 
   &:focus {

@@ -21,14 +21,16 @@ const Button = styled.button`
   transition: all 0.3s;
 
   &:visited {
-    background-color: ${(props) => props.theme.colors.lightestBg};
-    color: ${(props) => props.theme.colors.primaryCta};
+    background-color: ${(props) => props.theme.colors.lightBg};
+    color: ${(props) => props.theme.colors.fontColorDark};
+    border-color: ${(props) => props.theme.colors.fontColorDark};
   }
 
   &:hover,
   &:active {
-    background-color: ${(props) => props.theme.colors.lightestBg};
-    color: ${(props) => props.theme.colors.primaryCta};
+    background-color: ${(props) => props.theme.colors.lightBg};
+    color: ${(props) => props.theme.colors.fontColorDark};
+    border-color: ${(props) => props.theme.colors.fontColorDark};
   }
 
   &:focus {

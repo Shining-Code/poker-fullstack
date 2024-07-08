@@ -6,4 +6,5 @@ export const Label = styled.label`
   padding-left: 0.25rem;
   margin: 0.25rem 0;
   font-size: ${(props) => props.theme.fonts.fontSizeParagraph};
+  color: ${(props) => props.theme.colors.primaryCtaDarker};
 `;

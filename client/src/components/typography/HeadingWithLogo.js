@@ -16,7 +16,7 @@ const StyledHeadingWithLogo = styled.div`
     justify-content: center;
     align-items: center;
     margin-bottom: 2rem;
-    color: ${(props) => props.theme.colors.primaryCta};
+    color: ${(props) => props.theme.colors.primaryCtaDarker};
   }
 `;
 

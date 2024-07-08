@@ -1,19 +1,19 @@
-import React, { useRef, useContext } from 'react';
-import Container from '../components/layout/Container';
-import { Redirect, Link } from 'react-router-dom';
-import HeadingWithLogo from '../components/typography/HeadingWithLogo';
-import Button from '../components/buttons/Button';
-import { Input } from '../components/forms/Input';
-import { Form } from '../components/forms/Form';
-import { FormGroup } from '../components/forms/FormGroup';
-import { ButtonGroup } from '../components/forms/ButtonGroup';
-import { Label } from '../components/forms/Label';
-import RelativeWrapper from '../components/layout/RelativeWrapper';
-import ShowPasswordButton from '../components/buttons/ShowPasswordButton';
-import useScrollToTopOnPageLoad from '../hooks/useScrollToTopOnPageLoad';
-import authContext from '../context/auth/authContext';
-import contentContext from '../context/content/contentContext';
-import { TiledBackgroundImage } from '../components/decoration/TiledBackgroundImage';
+import React, { useRef, useContext } from "react";
+import Container from "../components/layout/Container";
+import { Redirect, Link } from "react-router-dom";
+import HeadingWithLogo from "../components/typography/HeadingWithLogo";
+import Button from "../components/buttons/Button";
+import { Input } from "../components/forms/Input";
+import { Form } from "../components/forms/Form";
+import { FormGroup } from "../components/forms/FormGroup";
+import { ButtonGroup } from "../components/forms/ButtonGroup";
+import { Label } from "../components/forms/Label";
+import RelativeWrapper from "../components/layout/RelativeWrapper";
+import ShowPasswordButton from "../components/buttons/ShowPasswordButton";
+import useScrollToTopOnPageLoad from "../hooks/useScrollToTopOnPageLoad";
+import authContext from "../context/auth/authContext";
+import contentContext from "../context/content/contentContext";
+import { TiledBackgroundImage } from "../components/decoration/TiledBackgroundImage";
 
 const RegistrationPage = () => {
   const { getLocalizedString } = useContext(contentContext);
@@ -59,17 +59,17 @@ const RegistrationPage = () => {
           }}
         >
           <HeadingWithLogo textCentered hideIconOnMobile={false}>
-            {getLocalizedString('registration_page-header_txt')}
+            {getLocalizedString("registration_page-header_txt")}
           </HeadingWithLogo>
           <FormGroup>
             <Label htmlFor="email">
-              {getLocalizedString('registration_page-email_lbl_txt')}
+              {getLocalizedString("registration_page-email_lbl_txt")}
             </Label>
             <Input type="email" name="email" ref={emailRef} required />
           </FormGroup>
           <FormGroup>
             <Label htmlFor="nickname">
-              {getLocalizedString('registration_page-nickname_lbl_txt')}
+              {getLocalizedString("registration_page-nickname_lbl_txt")}
             </Label>
             <Input
               type="text"
@@ -83,7 +83,7 @@ const RegistrationPage = () => {
           </FormGroup>
           <FormGroup>
             <Label htmlFor="password">
-              {getLocalizedString('registration_page-password_lbl_txt')}
+              {getLocalizedString("registration_page-password_lbl_txt")}
             </Label>
             <ShowPasswordButton passwordRef={passwordRef} />
             <Input
@@ -101,10 +101,10 @@ const RegistrationPage = () => {
           </FormGroup> */}
           <ButtonGroup>
             <Button primary type="submit" fullWidth>
-              {getLocalizedString('registration_page-cta_btn_txt')}
+              {getLocalizedString("registration_page-cta_btn_txt")}
             </Button>
-            <Link to="/login">
-              {getLocalizedString('registration_page-already_account_txt')}
+            <Link to="/login" style={{ color: "#000" }}>
+              {getLocalizedString("registration_page-already_account_txt")}
             </Link>
           </ButtonGroup>
         </Form>
